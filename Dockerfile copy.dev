@@ -2,6 +2,8 @@ FROM node:alpine
 
 WORKDIR '/app'
 
+
+# notice remove node_modules
 COPY package.json .
 RUN npm install
 COPY . .
